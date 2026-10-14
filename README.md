@@ -75,17 +75,6 @@ The notebook includes further explanations of what was modified, why, and how ea
 1. Download the original CSV from the [UCI dataset page](https://archive.ics.uci.edu/dataset/915/differentiated+thyroid+cancer+recurrence).
 2. Add it as `data/Thyroid_Diff.csv` in this repository.
 3. Upload the repository to GitHub. In [Google Colab](https://colab.research.google.com/), open the notebook from GitHub.
-4. In a new Colab session, clone the repository and change into its folder before running notebook cells:
-
-   ```python
-   !git clone https://github.com/YOUR_USERNAME/YOUR_REPOSITORY.git
-   %cd YOUR_REPOSITORY
-   ```
-
-5. Install dependencies if necessary using `!pip install -r requirements.txt`.
-6. Run the notebook **top to bottom**, inspect all tables and figures, and save the executed notebook to GitHub.
-
-For local use, install dependencies with `pip install -r requirements.txt` and launch the notebook in Jupyter.
 
 ## Limitations and responsible use
 
