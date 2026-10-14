@@ -23,18 +23,6 @@ The analysis also examines recurrence rates across patient subgroups and conside
 
 **Timing caveat:** Treatment response is excluded from the primary prediction pipeline because it may be recorded after diagnosis and could introduce information leakage. The timing of other clinical predictors, including staging and risk classification, should also be verified before claiming diagnosis-time prediction.
 
-## Repository structure
-
-```text
-thyroid_cancer_recurrence_project/
-├── thyroid_cancer_recurrence_analysis.ipynb
-├── data/
-│   └── Thyroid_Diff.csv       # Add original UCI dataset here
-├── requirements.txt
-└── README.md
-```
-
-The dataset must be added to the repository before submission. The notebook also contains a fallback that attempts to download the UCI dataset when internet access is available.
 
 ## Analytical workflow
 
