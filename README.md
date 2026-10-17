@@ -73,7 +73,7 @@ The notebook includes further explanations of what was modified, why, and how ea
 ## How to run in Google Colab
 
 1. Download the original CSV from the [UCI dataset page](https://archive.ics.uci.edu/dataset/915/differentiated+thyroid+cancer+recurrence).
-2. Add it as `data/Thyroid_Diff.csv` in this repository.
+2. Add it as `Thyroid_Diff.csv` in this repository.
 3. Upload the repository to GitHub. In [Google Colab](https://colab.research.google.com/), open the notebook from GitHub.
 
 ## Limitations and responsible use
