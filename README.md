@@ -4,7 +4,7 @@ A machine learning project exploring whether patient demographics and clinical c
 
 ## Project motivation
 
-I chose this dataset because I am interested in computational biology and healthcare data science. Predicting cancer recurrence is a meaningful classification problem, and this project gave me an opportunity to work with a combination of categorical and numerical clinical variables, practice data cleaning, and evaluate predictive models in a healthcare context.
+I chose this dataset because of my interest in computational biology and healthcare data science. Predicting cancer recurrence is an important classification problem, and this project allowed me to work with both categorical and numerical clinical variables, practice data preprocessing, and evaluate machine learning models in a healthcare context.
 
 ## Research question
 
@@ -46,7 +46,7 @@ The analysis also examines recurrence rates across patient subgroups and conside
 | Logistic Regression | 0.759 | **0.815** | 0.710 | 0.887 | 0.839 |
 | Majority-class baseline | 0.000 | 0.000 | 0.000 | 0.500 | 0.297 |
 
-These values are from the completed analysis run; rerunning the notebook may yield different values if the dataset, preprocessing, model settings, or random seeds change.
+Results reflect the dataset, preprocessing pipeline, and random seeds used in the original analysis. Performance may vary if these settings are modified.
 
 ### Interpretation
 
@@ -65,9 +65,10 @@ The analysis incorporates several techniques to improve reproducibility, model e
 
 ## How to run in Google Colab
 
-1. Download the original CSV from the [UCI dataset page](https://archive.ics.uci.edu/dataset/915/differentiated+thyroid+cancer+recurrence).
-2. Add it as `Thyroid_Diff.csv` in this repository.
-3. Upload the repository to GitHub. In [Google Colab](https://colab.research.google.com/), open the notebook from GitHub.
+1. Download the original dataset from the UCI Machine Learning Repository.
+2. Open the project notebook in Google Colab using its GitHub URL.
+3. Upload the dataset as Thyroid_Diff.csv to the Colab runtime.
+4. Run the notebook cells sequentially to reproduce the analysis.
 
 ## Limitations and responsible use
 
