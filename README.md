@@ -52,23 +52,16 @@ These values are from the completed analysis run; rerunning the notebook may yie
 
 Random Forest achieved the highest cross-validated F1 score and the strongest held-out F1, ROC-AUC, and PR-AUC. Logistic Regression nevertheless achieved **higher recall (0.815 versus 0.778)**, meaning it identified a greater proportion of actual recurrence cases at the evaluated decision threshold. This tradeoff matters in healthcare research, where missing a recurrence case may be more consequential than generating a false alarm. Neither model is ready for clinical decision-making.
 
-## Pipeline enhancements
+## Modeling and Analysis Techniques
 
-The notebook documents nine improvements beyond the basic analytical requirements:
+The analysis incorporates several techniques to improve reproducibility, model evaluation, and interpretability:
 
-| Enhancement | What changed | Why it helps |
-|---|---|---|
-| Reproducibility settings | Centralized random seeds and analysis settings | Makes runs easier to reproduce and compare |
-| Robust data loading and validation | Added input and schema checks | Catches dataset problems earlier |
-| Leakage prevention and feature engineering | Excluded treatment response and created age groups | Supports a clearer prediction target and subgroup analysis |
-| Automated subgroup visualization | Generated plots across available clinical variables | Reduces repetitive plotting code |
-| Inferential tests and effect sizes | Added association testing and Cramér's V | Provides statistical context beyond visual patterns |
-| Preprocessing pipelines | Encapsulated imputation, encoding, and scaling | Reduces train/test leakage and manual steps |
-| Baseline and expanded metrics | Compared models against a majority baseline using several metrics | Makes imbalanced-class performance easier to assess |
-| Permutation importance | Evaluated feature contributions | Improves model interpretability |
-| Automated results summary | Generated metric-based comparison output | Makes reporting more consistent |
-
-The notebook includes further explanations of what was modified, why, and how each change improves the workflow.
+- **Data validation and preprocessing:** Schema validation, missing-value handling, categorical encoding, and feature scaling.
+- **Leakage prevention:** Exclusion of treatment response from the primary prediction pipeline to reduce potential information leakage.
+- **Statistical analysis:** Chi-square tests, Mann–Whitney U tests, and Cramér's V to examine relationships between clinical characteristics and recurrence.
+- **Model evaluation:** Stratified train/test splitting, cross-validation, and comparison against a majority-class baseline.
+- **Model interpretability:** Permutation importance to evaluate feature contributions.
+- **Reproducibility:** Consistent random seeds and automated model performance summaries.
 
 ## How to run in Google Colab
 
